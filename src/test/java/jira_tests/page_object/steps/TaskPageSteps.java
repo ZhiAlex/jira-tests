@@ -18,7 +18,7 @@ public class TaskPageSteps {
 
     @Step("Выбор статуса")
     public TaskPageSteps chooseStatus(String status) {
-        String xpath = String.format("//div[@id='opsbar-transitions_more_drop']//a//span[text()='%s']", status);
+        String xpath = String.format("//div[@class='aui-dropdown2-item-group']//a//span[text()='%s']", status);
         $x(xpath).click();
         return this;
     }

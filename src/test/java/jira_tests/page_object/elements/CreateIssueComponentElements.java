@@ -13,6 +13,6 @@ public class CreateIssueComponentElements {
             chooseIssueTypeInput = $("#issuetype-field"),
             summaryInput = $("#summary"),
             createIssueButton = $("#create-issue-submit"),
-            chooseSetDescriptionTextButton = $x("(//ul[@class='tabs-menu']//a)[2]"),
+            chooseSetDescriptionTextButton = $x("(//ul//button[@class='aui-button'])[2]"),
             descriptionTextArea = $("#description");
 }

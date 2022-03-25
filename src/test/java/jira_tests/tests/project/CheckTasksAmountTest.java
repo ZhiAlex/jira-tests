@@ -10,7 +10,9 @@ public class CheckTasksAmountTest extends ProjectBaseTest {
     void checkTasksAmountTest() {
 
         int tasksAmount = Integer.parseInt(projectPageSteps.getTasksAmount().getText().split(" ")[0]);
-        int tasksLength = projectPageSteps.getTasks().toArray().length;
+        int tasksLength = projectPageSteps
+                .showAllTasks()
+                .getTasks().toArray().length;
 
         projectPageSteps.checkTasksAmount(tasksAmount, tasksLength);
     }

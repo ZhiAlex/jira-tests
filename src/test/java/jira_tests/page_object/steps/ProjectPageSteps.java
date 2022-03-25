@@ -20,6 +20,12 @@ public class ProjectPageSteps {
         return projectPageElements.getTasksAmount();
     }
 
+    @Step("Открытие полного списка тасков")
+    public ProjectPageSteps showAllTasks(){
+        projectPageElements.getShowAllTasksButton().scrollTo().click();
+        return this;
+    }
+
     @Step("Получение всех тасков")
     public ElementsCollection getTasks() {
         return projectPageElements.getTasks();
